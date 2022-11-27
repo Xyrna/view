@@ -1,0 +1,34 @@
+﻿*, *::after, *::before {
+    font-family: 'Comic Sans MS';
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+.button {
+    background: black;
+    color: white;
+}
+
+.center-x {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center-y {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-controls {
+    margin-bottom: 2rem;
+}
