@@ -32,3 +32,13 @@ html, body {
 .form-controls {
     margin-bottom: 2rem;
 }
+
+.mydatagrid{
+    width: 80%;
+    border: solid 2 px black;
+    min-width: 80%;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 70px;
+
+}

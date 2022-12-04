@@ -14,10 +14,10 @@
             <form id="form1" runat="server">
                 <div class="form-controls">
                 <asp:Label ID="Label" runat="server" Text="CategoryName: "></asp:Label>
-                <asp:TextBox ID="TxtInput" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtInput" OnTextChanged="TxtInput_TextChanged" runat="server"></asp:TextBox>
                 <asp:Button CssClass="button" AutoPostBack="true" ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
                 </div>
-                <asp:GridView  ID="GridView1" runat="server" OnSelectedIndexChanged="GridView_SelectedIndexChanged">
+                <asp:GridView CssClass="mydatagrid" PagerStyle-CssClass="pager" HeaderStyle-CssClass="header" RowStyle-CssClass="rows" AutoPostBack="true" ID="GridView1" runat="server" OnPageIndexChanging="GridView1_PageIndexChanging" AllowPaging="True" PageSize="4">
                 </asp:GridView>
                 <asp:Label ID="LblNotFound" runat="server" Text=""></asp:Label>
             </form>
